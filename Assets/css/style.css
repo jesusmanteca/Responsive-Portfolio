@@ -52,7 +52,7 @@ section {
     height: fit-content;
 }
 .portfoliosectionwrap {
-    height: 300px;
+    height: 500px;
 }
 img {
     width: 200px;
@@ -106,13 +106,32 @@ input[type=text], select, textarea {
 .Textbox {
     position: absolute;
 }
-@media (min-width: 640px) { ... }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 980px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+@media screen and (max-width: 980px) {
+    p {
+        font-style: italic;
+    }
+}
+@media screen and (max-width: 768px) {
+    p {
+        font-style: normal ;
+    }
+}
+@media screen and (max-width: 640px) {
+    p {
+        font-style: oblique;
+        font-family: sans-serif;
+        font-size: larger;
+        background-color: rgb(53, 64, 70);
+        color: whitesmoke;
+    }
+    .container {
+        background-color: rgb(0, 75, 119);
+    }
+    h1 {
+        color: whitesmoke;
+    }
+    .card-body {
+        background-color: rgb(0, 75, 119);
+    }
+}
